@@ -1,0 +1,240 @@
+// Freelancer 
+
+.tabs {
+
+    // .tabs__navigation
+    &__navigation {
+        display: flex;
+    }
+
+    // .tabs__title
+    &__title {
+        border: 1px solid #eee;
+        padding: toRem(10) toRem(15);
+        border-radius: toRem(5);
+
+        &._tab-active {
+            border: 1px solid #000;
+        }
+    }
+
+    // .tabs__content
+    &__content {
+        border: 1px solid #eee;
+        padding: toRem(10) toRem(15);
+    }
+
+    // .tabs__body
+    &__body {}
+}
+// Styles responsive TABs
+
+// :root {
+//     --first-color: #2e2e41;
+//     --second-color: #5b85ff;
+//     --third-color: #434354;
+//     --text-color: #fff;
+//     --box-shadow: 0 5px 25px rgb (2, 2, 2, 0.1);
+//     --text-shadow: 0 5px 25px rgb (2, 2, 2, 0.1);
+
+// }
+
+// .tab {
+//     position: relative;
+
+//     &__nav-bar {
+    //         position: relative;
+    //         margin: 65px 10px 40px 10px;
+
+//     }
+
+//     // .tab__navigation
+
+//     &__navigation {
+//         position: relative;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         max-width: fit-content;
+//         margin: 0 auto;
+
+//     }
+
+//     // .tab__menu
+
+//     &__menu {
+//         color: var(--text-color);
+//         background: var(--third-color);
+//         max-width: 800px;
+//         padding: 10px;
+//         white-space: nowrap;
+//         border-bottom: 1px solid var(--third-color);
+//         border-radius: 50px;
+//         box-shadow: var(--box-shadow);
+//         overflow-x: auto;
+//         scroll-behavior: smooth;
+//     }
+
+//     &__menu.dragging {
+//         scroll-behavior: unset;
+//         cursor: grab;
+//     }
+
+//     &__menu::-webkit-scrollbar {
+//         display: none;
+//     }
+
+//     // .tab__btn
+
+//     &__btn {
+//         color: var(--text-color);
+//         display: inline-block;
+//         font-size: 1em;
+//         font-weight: 400;
+//         padding: 10px 20px;
+//         border-radius: 30px;
+//         cursor: pointer;
+//         user-select: none;
+//         transition: 0.3s ease;
+
+//         &:not(:last-child) {
+    //             margin-left: toRem(2);
+    //         }
+    //     }
+
+//     &__menu.dragging.tabs__btn {
+//         pointer-events: none;
+//     }
+
+//     &__btn:hover {
+//         background: var(--first-color);
+//     }
+
+//     &__btn.active {
+//         background: var(--second-color);
+
+//     }
+
+//     &__left-btn,
+//     &__right-btn {
+//         position: absolute;
+//         color: var(--text-color);
+//         font-size: 1.8em;
+//         padding: 10px;
+//         cursor: pointer;
+//     }
+
+//     &__left-btn {
+//         left: 0;
+//         background: linear-gradient(to left, transparent, var(--first-color) 80%);
+//         border-top-left-radius: 15px;
+//         border-bottom-left-radius: 15px;
+//         display: none;
+//     }
+
+//     &__right-btn {
+//         right: 0;
+//         background: linear-gradient(to right, transparent, var(--first-color) 80%);
+//         border-top-right-radius: 15px;
+//         border-bottom-right-radius: 15px;
+//     }
+
+//     // .tab__content
+//     &__content {}
+
+// }
+
+
+
+// // .content-tab
+// .content-tab {
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+
+//     // .content-tab__card
+
+//     &__card {
+    //         position: absolute;
+    //         top: 0;
+    //         right: auto;
+    //         bottom: 0;
+
+//         max-width: 1100px;
+    //         padding: toRem(15) toRem(50);
+    //         transform: translateX(toRem(25));
+    //         content-visibility: hidden;
+    //         opacity: 0;
+    //     }
+
+//     &__card.active {
+//         transform: translateX(0);
+//         content-visibility: visible;
+//         opacity: 1;
+//         transition: 1s ease;
+//     }
+
+//     // .content-tab__row
+
+//     &__row {
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin: 50px 0;
+//         gap: 30px;
+
+//     }
+
+//     // .content-tab__left
+
+//     &__left {}
+
+//     // .content-tab__img
+
+//     &__img {
+//         position: relative;
+//         width: toRem(450);
+//         max-width: toRem(450);
+//         max-height: toRem(450);
+//         border-radius: 20px;
+//         overflow: hidden;
+//         justify-content: center;
+//         align-items: center;
+//         box-shadow: var(--box-shadow);
+
+//     }
+
+//     &__img img {
+//         width: 100%;
+//     }
+
+//     // .content-tab__right
+
+//     &__right {
+//         max-width: toRem(800);
+//     }
+
+//     // .content-tab__info
+
+//     &__info {
+//         color: var(--text-color);
+//     }
+
+//     // .content-tab__title
+
+//     &__title {
+//         font-weight: 800;
+//         font-size: toRem(32);
+//         margin-bottom: 20px;
+//     }
+
+//     // .content-tab__description
+
+//     &__description p {
+//         &:not(:last-child) {
+//             margin-bottom: toRem(15);
+//         }
+//     }
+// }
