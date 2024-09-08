@@ -16,7 +16,7 @@ import * as mainFunctions from './js/functions.js';
 // mainFunctions.addLoadedClass();
 
 /* Модуль для роботи з меню (Бургер) */
-// mainFunctions.menuInit();
+mainFunctions.menuInit();
 
 /* Форматування чисел */
 // import './libs/wNumb.min.js';
@@ -68,7 +68,7 @@ import * as mainFunctions from './js/functions.js';
 // ================================================================
 
 /* Динамічний адаптив */
-// import './js/dynamic_adapt.js';
+import './js/dynamic_adapt.js';
 
 /* 
 Модуль "Попапи"

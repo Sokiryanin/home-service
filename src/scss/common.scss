@@ -1,0 +1,68 @@
+// Common blocks 
+
+.block-header {
+    display: grid;
+    gap: toRem(24);
+    // .block-header--center
+
+    &--center {
+        text-align: center;
+    }
+
+    &--inline {
+        grid-template-columns: minmax(auto, toRem(586)) minmax(auto, toRem(613));
+        justify-content: space-between;
+        gap: toRem(24);
+        align-items: end;
+    }
+
+    // .block-header__title
+
+    &__title {
+        color: $darkColor;
+        font-weight: 700;
+        line-height: 1.23;
+        @include adaptiveValue("font-size", 52, 32);
+
+        &:not(:last-child) {
+            margin-bottom: toRem(24);
+        }
+
+        // .block-header__title--big
+
+        &--big {
+            @include adaptiveValue("font-size", 64, 44);
+        }
+
+        // .block-header__title--white
+
+        &--white {
+            color: #fff;
+        }
+    }
+
+    // .block-header__text
+
+    &__text {
+        p {
+            font-weight: 400;
+            font-size: toRem(18);
+            line-height: 1.55;
+
+        }
+    }
+}
+
+/*
+<div class="block-header">
+    <h2 class="block-header__title">
+        Professional for your home services
+    </h2>
+    <div class="block-header__text">
+        <p>
+            You need help for home care? We are home care professionals focused in the US region. We provide several
+            services that support home services
+        </p>
+    </div>
+</div>
+*/

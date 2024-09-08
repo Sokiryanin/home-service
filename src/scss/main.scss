@@ -5,10 +5,14 @@
 // За замовчуванням шрифт ==============================================================================================================================================================================================================================================================================
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 $fontFamily: "Plus Jakarta Sans";
-$fontSize: toRem(14); // де 14(px) - розмір шрифту за замовчуванням з макету
+$fontSize: toRem(18); // де 18(px) - розмір шрифту за замовчуванням з макету
 
 // Основні кольори
-$mainColor: #000; // Колір шрифту за замовчуванням
+$mainColor: #545971; // Колір шрифту за замовчуванням
+$darkColor: #171921;
+$bgColor: #142257;
+$bgColorSemi: #1f3584;
+$bgColorLight: #15b2f5;
 
 // Палітра кольорів
 // @import "base/colors-palette";
@@ -20,7 +24,7 @@ $minWidth: 320;
 // Ширина полотна (макету)
 $maxWidth: 1920;
 // Ширина обмежуючого контейнера (0 = немає обмеження)
-$maxWidthContainer: 1200;
+$maxWidthContainer: 1430;
 // Загальний відступ у контейнера
 // (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
 $containerPadding: 30;
@@ -40,7 +44,7 @@ $mobileSmall: toEm(479.98); // Телефони S
 $responsiveType: 1;
 
 body {
-
+@include adaptiveValue("font-size", 18, 16);
     // scrollbar-gutter: stable;
     // Скролл заблоковано
     .lock & {
@@ -141,6 +145,6 @@ body {
 
 @import './base.scss';
 @import './base/reset.scss';
-
+@import './common.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
