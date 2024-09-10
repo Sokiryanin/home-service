@@ -10,6 +10,7 @@ $fontSize: toRem(18); // де 18(px) - розмір шрифту за замов
 // Основні кольори
 $mainColor: #545971; // Колір шрифту за замовчуванням
 $darkColor: #171921;
+$greyColor: #9ea3b5;
 $bgColor: #142257;
 $bgColorSemi: #1f3584;
 $bgColorLight: #15b2f5;
@@ -146,5 +147,6 @@ body {
 @import './base.scss';
 @import './base/reset.scss';
 @import './common.scss';
+@import './components/hero.scss';
 @import './components/header.scss';
 @import './components/footer.scss';
