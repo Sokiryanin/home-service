@@ -1,0 +1,109 @@
+.about {
+
+    @include adaptiveValue("padding-top", 123, 40);
+    @include adaptiveValue("padding-bottom", 64, 40);
+
+    // .about__container
+
+    &__container {
+        display: grid;
+        row-gap: toRem(30);
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width:$tablet) {
+            grid-template-columns: auto;
+        }
+
+    }
+
+    // .about__body
+
+    &__body {
+
+        @include adaptiveValue("padding-top", 100, 30, 2, $containerWidth, );
+
+        @media (min-width:$tablet) {
+            max-width: toRem(580);
+            padding-right: toRem(20);
+        }
+    }
+
+    // .about__block-header
+
+    &__block-header {
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 54, 30);
+        }
+    }
+
+    // .about__items
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 56, 30);
+        }
+
+
+        @include adaptiveValue("gap", 32, 15);
+
+        @media (max-width: toEm(540)) {
+            grid-template-columns: auto;
+        }
+    }
+
+    // .about__item
+
+    &__item {
+        font-weight: 700;
+        line-height: 1.4;
+        color: $bgColorSemi;
+        background: url('../../img/icons/check-service.svg') 0 toEm(10, 20) no-repeat;
+        padding-left: toRem(28);
+        @include adaptiveValue("font-size", 20, 16);
+    }
+
+    // .about__info
+
+    &__info {
+
+        border-radius: toRem(24);
+        background-color: $bgColorLight;
+        padding: toRem(12) toRem(32);
+        color: #fff;
+        line-height: 1.55;
+
+        @media (min-width:$tablet) {
+            max-width: toRem(450);
+        }
+
+        a {
+            font-size: toRem(20);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+    }
+
+    // .about__image
+
+    &__image {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.block-header {
+
+    // .block-header__title
+
+    &__title {}
+
+    // .block-header__text
+
+    &__text {}
+}

@@ -2,7 +2,7 @@
 
 .block-header {
     display: grid;
-    gap: toRem(24);
+    @include adaptiveValue("gap", 24, 15);
     // .block-header--center
 
     &--center {
@@ -12,8 +12,10 @@
     &--inline {
         grid-template-columns: minmax(auto, toRem(586)) minmax(auto, toRem(613));
         justify-content: space-between;
-        gap: toRem(24);
         align-items: end;
+        @media (max-width: $tablet) {
+                grid-template-columns: auto;
+            }
     }
 
     // .block-header__title
@@ -22,11 +24,7 @@
         color: $darkColor;
         font-weight: 700;
         line-height: 1.23;
-        @include adaptiveValue("font-size", 52, 32);
-
-        &:not(:last-child) {
-            margin-bottom: toRem(24);
-        }
+        @include adaptiveValue("font-size", 52, 24);
 
         // .block-header__title--big
 

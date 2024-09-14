@@ -13,17 +13,26 @@
     font-size: toRem(24);
     font-weight: 700;
     line-height: 1.33;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 
     @media (any-hover: hover) {
         &:hover {
             background-color: $bgColorSemi;
+            color: #fff;
         }
     }
 
-    &--min {}
+                &--min {
+                    font-size: toRem(18);
+                    line-height: 150%;
+                    padding: toRem(12) toRem(36);
+                    min-height: 0;
+                }
 
-    &--white {}
+                &--white {
+                    background-color: #fff;
+                    color: $bgColorLight;
+                }
 
 
 

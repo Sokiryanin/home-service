@@ -40,13 +40,13 @@
             height: 100%;
             top: 0;
             left: 0;
-            background-image: linear-gradient(-35deg, #131f4b 4.15%, rgba(19, 31, 75, 0) 43.25%);
+            background: linear-gradient(-35deg, #131f4b 4.15%, rgba(19, 31, 75, 0) 43.25%);
             // fill: linear-gradient(35deg, #131f4b 4.15%, rgba(19, 31, 75, 0) 43.25%);
         }
 
         &--right {
             &::after {
-                background-image: linear-gradient(35deg, #131f4b 4.15%, rgba(19, 31, 75, 0) 43.25%);
+                background: linear-gradient(35deg, #131f4b 4.15%, rgba(19, 31, 75, 0) 43.25%);
             }
         }
     }
