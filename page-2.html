@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" crossorigin src="/home-service/assets/main-bcdae482.js"></script>
-    <link rel="stylesheet" href="/home-service/assets/main-ade9c719.css">
+    <script type="module" crossorigin src="/home-service/assets/vendor-f275e1b7.js"></script>
+    <script type="module" crossorigin src="/home-service/assets/main-35c08650.js"></script>
+    <link rel="stylesheet" href="/home-service/assets/vendor-2d4c25b0.css">
+    <link rel="stylesheet" href="/home-service/assets/main-b8733196.css">
   </head>
   <body>
     <div class="wrapper">
@@ -21,10 +23,10 @@
       <button type="button" class="menu__icon icon-menu"><span></span></button>
       <nav class="menu__body">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Our Blog</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Contact </a></li>
+          <li class="menu__item"><a href="#" data-goto=".about" class="menu__link">About Us</a></li>
+          <li class="menu__item"><a href="#" data-goto=".services" class="menu__link">Services</a></li>
+          <li class="menu__item"><a href="#" data-goto=".blog" class="menu__link">Our Blog</a></li>
+          <li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Contact </a></li>
           </ul>
           </nav>
           </div>
@@ -35,10 +37,10 @@
       <!-- main -->
       <main class="page">
         <!-- about -->
-        <section class="about">
+        <section data-watch="navigator" data-watch-threshold="0.3" class="about">
     <div class="about__container">
         <div class="about__body">
-            <div class="about__block-header block-header">
+            <div data-watch class="about__block-header block-header">
                 <h2 class="block-header__title">
                     Professional for your home services
                 </h2>
