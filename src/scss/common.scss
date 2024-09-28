@@ -24,6 +24,10 @@
         color: $darkColor;
         font-weight: 700;
         line-height: 1.23;
+        // ===============
+            transform: translate(0, 15%);
+            opacity: 0;
+            transition: transform 0.5s, opacity 0.5s;
         @include adaptiveValue("font-size", 52, 24);
 
         // .block-header__title--big
@@ -37,11 +41,24 @@
         &--white {
             color: #fff;
         }
+._watcher-view & {
+    transform: translate(0, 0);
+    opacity: 1;
+}
     }
 
     // .block-header__text
 
     &__text {
+        transform: translate(0, 15%);
+            opacity: 0;
+            transition: transform 0.5s 0.3s,
+                opacity 0.5s 0.3s;
+        
+            ._watcher-view & {
+                transform: translate(0, 0);
+                opacity: 1;
+            }
         p {
             font-weight: 400;
             font-size: toRem(18);
@@ -64,6 +81,20 @@
     </div>
 </div>
 */
+// ===================================================================
+
+.text {
+    line-height: 1.55;
+
+    p {
+        &:not(:last-child) {
+            margin-bottom: toRem(15);
+        }
+    }
+
+}
+
+// ===================================================================
 .done {
     display: flex;
     flex-wrap: wrap;

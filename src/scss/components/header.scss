@@ -132,9 +132,13 @@
         font-weight: 700;
         line-height: 1.33;
 
-        @media (max-width: $mobile) {}
-
-        &:hover {
+        @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: underline;
+                    }
+                    }
+                    
+                    &._navigator-active {
             text-decoration: underline;
         }
     }

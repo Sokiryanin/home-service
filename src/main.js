@@ -1,7 +1,9 @@
 // Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
 
+
 window['FLS'] = true;
 import './scss/main.scss';
+import 'animate.css';
 
 import * as mainFunctions from './js/functions.js';
 
@@ -13,7 +15,7 @@ import * as mainFunctions from './js/functions.js';
 // mainFunctions.addTouchClass();
 
 /* Додавання loaded для HTML після повного завантаження сторінки */
-// mainFunctions.addLoadedClass();
+mainFunctions.addLoadedClass();
 
 /* Модуль для роботи з меню (Бургер) */
 mainFunctions.menuInit();
@@ -100,7 +102,7 @@ myForms.formFieldsInit({
 // myForms.formQuantity();
 
 /* Модуль зіркового рейтингу */
-// myForms.formRating();
+myForms.formRating();
 
 /* Модуль роботи з select. */
 // import './js/libs/select.js';
@@ -115,7 +117,7 @@ myForms.formFieldsInit({
 Документація плагіна: https://swiperjs.com/
 Сніппет(HTML): swiper
 */
-// import './js/sliders.js';
+import './js/sliders.js';
 
 // Модулі роботи з прокручуванням сторінки ==============================================================
 /*
@@ -132,7 +134,7 @@ myForms.formFieldsInit({
 // import './js/scroll/lazyload.js';
 
 // Спостерігач за об'єктами з атрибутом data-watch
-// import './js/libs/watcher.js';
+import './js/libs/watcher.js';
 
 // Модуль поекранної прокрутки
 // import './js/libs/fullpage.js';
@@ -144,7 +146,7 @@ myForms.formFieldsInit({
 import * as myScroll from './js/scroll/scroll.js';
 
 // Плавна навігація по сторінці
-// myScroll.pageNavigation();
+myScroll.pageNavigation();
 
 // Функціонал додавання класів до хедеру під час прокручування
 // myScroll.headerScroll();

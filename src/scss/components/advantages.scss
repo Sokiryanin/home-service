@@ -1,6 +1,6 @@
 .advantages {
-    @include adaptiveValue("padding-left", 60, 15, 2, $containerWidth, 991.98);
-    @include adaptiveValue("padding-right", 60, 15, 2, $containerWidth, 991.98);
+    // @include adaptiveValue("padding-left", 60, 15, 2, $containerWidth, 991.98);
+        // @include adaptiveValue("padding-right", 60, 15, 2, $containerWidth, 991.98);
 
     // .advantages__body
     &__body {

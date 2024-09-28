@@ -1,0 +1,105 @@
+.how {
+    @include adaptiveValue("padding-top", 155, 40);
+    @include adaptiveValue("padding-bottom", 155, 40);
+    // .how__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media (max-width:$tablet) {
+            grid-template-columns: auto;
+            gap: toRem(30);
+        }
+    }
+
+    // .how__image
+
+    &__image {
+        img {
+            transform: translate(-10.59%, 0);
+            max-width: 100%;
+        }
+
+        @media (max-width:$tablet) {
+            order: 2;
+            text-align: center;
+
+            img {
+                transform: translate(0, 0);
+            }
+        }
+    }
+
+    // .how__content
+
+    &__content {
+
+        @media (max-width:$tablet) {
+            order: 1;
+        }
+    }
+
+    // .how__block-header
+
+    &__block-header {
+        max-width: toRem(400);
+
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 60, 30);
+        }
+
+        @media (max-width:$tablet) {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+
+    // .how__list
+
+    &__list {}
+}
+
+.list-how {
+    display: grid;
+    @extend %listCounter;
+
+    @include adaptiveValue("gap", 50, 20);
+    // .list-how__item
+
+    &__item {
+
+        display: grid;
+        grid-template-columns: toRem(170) auto;
+        gap: toRem(35);
+        @include adaptiveValue("padding-left", 70, 40);
+
+        &::before {
+
+            font-weight: 700;
+            color: $greyColor;
+            @include adaptiveValue("font-size", 52, 30);
+        }
+
+        @media (max-width: toEm(520)) {
+            grid-template-columns: auto;
+            gap: toRem(5);
+        }
+
+    }
+
+    // .list-how__title
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.33;
+        color: $darkColor;
+        @include adaptiveValue("font-size", 24, 18);
+    }
+
+    // .list-how__text
+
+    &__text {
+        color: $mainColor;
+    }
+}

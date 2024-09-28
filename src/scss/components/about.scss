@@ -46,7 +46,6 @@
             @include adaptiveValue("margin-bottom", 56, 30);
         }
 
-
         @include adaptiveValue("gap", 32, 15);
 
         @media (max-width: toEm(540)) {
@@ -62,7 +61,23 @@
         color: $bgColorSemi;
         background: url('../../img/icons/check-service.svg') 0 toEm(10, 20) no-repeat;
         padding-left: toRem(28);
+opacity: 0;
+    transform: translate(0, 15%);
+    transition:
+        opacity 0.5s,
+        transform 0.5s;
         @include adaptiveValue("font-size", 20, 16);
+._watcher-view & {
+        transform: translate(0, 0);
+        opacity: 1;
+
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i }) {
+                $delay: $i * 0.15;
+                transition-delay: #{$delay}s;
+            }
+        }
+    }
     }
 
     // .about__info
