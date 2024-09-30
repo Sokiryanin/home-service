@@ -47,7 +47,7 @@
         line-height: 1.33;
         font-weight: 700;
 
-        background: url('../../img/icons/view-more-arrow.svg') right no-repeat;
+        background: url('../img/icons/view-more-arrow.svg') right no-repeat;
         padding-right: toEm(20, 24);
         @include adaptiveValue("font-size", 24, 18);
     }
