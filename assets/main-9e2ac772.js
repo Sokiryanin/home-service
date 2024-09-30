@@ -14,4 +14,4 @@ import{S as E,N as k,P as q}from"./vendor-f275e1b7.js";(function(){const t=docum
               ${e}
           </div>
       </article>`;t.innerHTML+=o})}async function j(){try{const i=await fetch("data/cards.json");if(!i.ok)throw new Error("Ошибка загрузки данных");return(await i.json()).items}catch(i){return console.error("Error:",i),[]}}M();window.FLS=!0;T();C();O();P();
-//# sourceMappingURL=main-a4e0de68.js.map
+//# sourceMappingURL=main-9e2ac772.js.map
