@@ -74,7 +74,7 @@ function renderCards(items, container) {
 // Ф-ція загрузки карток з бази cards.json
 async function fetchData() {
   try {
-    const response = await fetch('../data/cards.json');
+    const response = await fetch('data/cards.json');
     if (!response.ok) {
       throw new Error('Ошибка загрузки данных');
     }
