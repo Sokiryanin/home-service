@@ -33,9 +33,9 @@ class ScrollWatcher {
   // Конструктор спостерігачів
   scrollWatcherConstructor(items) {
     if (items.length) {
-      this.scrollWatcherLogging(
-        `Прокинувся, стежу за об'єктами (${items.length})...`
-      );
+      // this.scrollWatcherLogging(
+      //   `Прокинувся, стежу за об'єктами (${items.length})...`
+      // );
       // Унікалізуємо параметри
       let uniqParams = uniqArray(
         Array.from(items).map(function (item) {
@@ -98,7 +98,7 @@ class ScrollWatcher {
         this.scrollWatcherInit(groupItems, configWatcher);
       });
     } else {
-      this.scrollWatcherLogging("Сплю, немає об'єктів для стеження. ZzzZZzz");
+      // this.scrollWatcherLogging("Сплю, немає об'єктів для стеження. ZzzZZzz");
     }
   }
   // Функція створення налаштувань
@@ -109,9 +109,9 @@ class ScrollWatcher {
     if (document.querySelector(paramsWatch.root)) {
       configWatcher.root = document.querySelector(paramsWatch.root);
     } else if (paramsWatch.root !== 'null') {
-      this.scrollWatcherLogging(
-        `Эмм... батьківського об'єкта ${paramsWatch.root} немає на сторінці`
-      );
+      // this.scrollWatcherLogging(
+      //   `Эмм... батьківського об'єкта ${paramsWatch.root} немає на сторінці`
+      // );
     }
     // Відступ спрацьовування
     configWatcher.rootMargin = paramsWatch.margin;
@@ -119,9 +119,9 @@ class ScrollWatcher {
       paramsWatch.margin.indexOf('px') < 0 &&
       paramsWatch.margin.indexOf('%') < 0
     ) {
-      this.scrollWatcherLogging(
-        `йой, налаштування data-watch-margin потрібно задавати в PX або %`
-      );
+      // this.scrollWatcherLogging(
+      //   `йой, налаштування data-watch-margin потрібно задавати в PX або %`
+      // );
       return;
     }
     // Точки спрацьовування
@@ -140,7 +140,7 @@ class ScrollWatcher {
   }
   // Функція створення нового спостерігача зі своїми налаштуваннями
   scrollWatcherCreate(configWatcher) {
-    console.log(configWatcher);
+    // console.log(configWatcher);
     this.observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         this.scrollWatcherCallback(entry, observer);
@@ -171,17 +171,17 @@ class ScrollWatcher {
       targetElement.classList.contains('_watcher-view')
         ? targetElement.classList.remove('_watcher-view')
         : null;
-      this.scrollWatcherLogging(
-        `Я не бачу ${targetElement.classList}, прибрав клас _watcher-view`
-      );
+      // this.scrollWatcherLogging(
+      //   `Я не бачу ${targetElement.classList}, прибрав клас _watcher-view`
+      // );
     }
   }
   // Функція відключення стеження за об'єктом
   scrollWatcherOff(targetElement, observer) {
     observer.unobserve(targetElement);
-    this.scrollWatcherLogging(
-      `Я перестав стежити за ${targetElement.classList}`
-    );
+    // this.scrollWatcherLogging(
+    //   `Я перестав стежити за ${targetElement.classList}`
+    // );
   }
   // Функція виведення в консоль
   scrollWatcherLogging(message) {

@@ -1,6 +1,6 @@
 .how {
     @include adaptiveValue("padding-top", 155, 40);
-    @include adaptiveValue("padding-bottom", 155, 40);
+    @include adaptiveValue("padding-bottom", 155, 20);
     // .how__container
 
     &__container {

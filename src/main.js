@@ -153,3 +153,6 @@ myScroll.pageNavigation();
 
 // Модуль анімація цифрового лічильника
 // myScroll.digitsCounter();
+
+/* Підключаємо файли зі своїм кодом */
+import "./js/script.js";

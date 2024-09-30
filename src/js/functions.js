@@ -614,7 +614,6 @@ export function horizontTabs() {
 
 // Модуль роботи з меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
-  console.log('Меню бургер');
   if (document.querySelector('.icon-menu')) {
     document.addEventListener('click', function (e) {
       if (bodyLockStatus && e.target.closest('.icon-menu')) {
@@ -921,7 +920,7 @@ export function customCursor(isShadowTrue) {
 export function FLS(message) {
   setTimeout(() => {
     if (window.FLS) {
-      console.log(message);
+      // console.log(message);
     }
   }, 0);
 }

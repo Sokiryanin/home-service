@@ -1,18 +1,16 @@
 .reviews {
 
     // .reviews__container
-    @include adaptiveValue("padding-top", 130, 40);
+    @include adaptiveValue("padding-top", 130, 0);
     @include adaptiveValue("padding-bottom", 130, 40);
 
     &__container {
         max-width: toRem(1160);
-
     }
 
     // .reviews__body
     &__body {
         position: relative;
-
 
         @media (min-width: toEm(600)) {
             padding: 0 toRem(72);
@@ -55,7 +53,7 @@
         height: toRem(48);
         border-radius: 50%;
         transform: translate(0px, -50%);
-        background: $bgColorLight url('../../img/reviews/arrow-reviews.svg') center no-repeat;
+        background: $bgColorLight url('../../img/reviews/arrow-left.svg') center no-repeat;
         // .reviews__arrow--left
 
         &--left {
@@ -70,7 +68,7 @@
         }
 
         &.swiper-button-disabled {
-            background: #e3e6f0 url('../../img/reviews/arrow-reviews.svg') center no-repeat;
+            background: #e3e6f0 url('../../img/reviews/arrow-left.svg') center no-repeat;
             pointer-events: none;
             cursor: default;
         }
