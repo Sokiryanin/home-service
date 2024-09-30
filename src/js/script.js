@@ -1,7 +1,7 @@
 import { isMobile } from './functions';
 
 import { myModules } from './modules';
-// Константы
+
 const CARDS_TO_SHOW = 3; // Кількість відображених карточок
 let displayedCards = 0; // Лічильник відображених карточок
 
@@ -10,7 +10,7 @@ async function displayCards() {
   const blogItems = document.getElementById('blogItems');
   const items = await fetchData();
 
-  // Рлказуємо перші 3 (або менше ящко їх менше 3)
+  // Показуємо перші 3 картки(або менше ящко їх менше 3)
   const itemsToShow = items.slice(0, CARDS_TO_SHOW);
   renderCards(itemsToShow, blogItems);
 
@@ -71,8 +71,7 @@ function renderCards(items, container) {
   });
 }
 
-// Ф-ція загрузки карточок з бази cards.json
-
+// Ф-ція загрузки карток з бази cards.json
 async function fetchData() {
   try {
     const response = await fetch('data/cards.json');
@@ -82,7 +81,7 @@ async function fetchData() {
     const data = await response.json();
     return data.items;
   } catch (error) {
-    console.error('Ошибка:', error);
+    console.error('Error:', error);
     return [];
   }
 }
