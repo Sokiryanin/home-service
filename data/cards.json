@@ -2,7 +2,7 @@
     "items": [
         {
             "id": 1,
-            "image": "img/blog/phone.jpg",
+            "image": "./img/blog/phone.jpg",
             "title": "Understanding Smart Home Systems & Maintenance",
             "url": "https:: //google.com",
             "date": "19 jan 2023",
