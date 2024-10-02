@@ -1,0 +1,109 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "image": "img/blog/phone.jpg",
+            "title": "Understanding Smart Home Systems & Maintenance",
+            "url": "https:: //google.com",
+            "date": "19 jan 2023",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        },
+        {
+            "id": 2,
+            "image": "img/blog/employers.jpg",
+            "title": "The Ultimate Guide to Home Repairs and Renovations",
+            "url": "https:: //google.com",
+            "date": "19 feb 2023",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        },
+        {
+            "id": 3,
+            "image": "img/blog/colors.jpg",
+            "title": "Painting Techniques for a Kitchen Refresh",
+            "url": "https:: //google.com",
+            "date": "20 jan 2023",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        },
+        {
+            "id": 4,
+            "image": "img/blog/phone.jpg",
+            "title": "Painting Techniques for a Kitchen Refresh",
+            "url": "https:: //google.com",
+            "date": "30 may 2025",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        }, 
+        {
+            "id": 5,
+            "image": "img/blog/phone.jpg",
+            "title": "Understanding Smart Home Systems & Maintenance",
+            "url": "https:: //google.com",
+            "date": "19 jan 2023",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        },
+        {
+            "id": 6,
+            "image": "img/blog/employers.jpg",
+            "title": "The Ultimate Guide to Home Repairs and Renovations",
+            "url": "https:: //google.com",
+            "date": "19 feb 2023",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        },
+        {
+            "id": 7,
+            "image": "img/blog/colors.jpg",
+            "title": "Painting Techniques for a Kitchen Refresh",
+            "url": "https:: //google.com",
+            "date": "20 jan 2023",
+            "text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you...</p>",
+            "tags": 
+                {         
+                "Plumbin": "https:: //google.com", 
+                "Architecture": "https:: //google.com", 
+                "Maintenance": "https:: //google.com"
+                }
+            
+        }
+    ]
+}
