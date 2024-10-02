@@ -88,15 +88,14 @@ import './js/dynamic_adapt.js';
 import * as myForms from './js/forms/forms.js';
 
 /* Робота з полями форми */
-/*
+
 myForms.formFieldsInit({
-	viewPass: false,
-	autoHeight: false
+  viewPass: false,
+  autoHeight: false,
 });
-*/
 
 /* Надсилання форми */
-// myForms.formSubmit();
+myForms.formSubmit();
 
 /* Модуль форми "кількість" */
 // myForms.formQuantity();
