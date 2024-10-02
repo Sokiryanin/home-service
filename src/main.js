@@ -28,7 +28,7 @@ mainFunctions.menuInit();
 Документація: https://template.fls.guru/template-docs/modul-spojlery.html
 Сніппет (HTML): spollers
 */
-// mainFunctions.spollers();
+mainFunctions.spollers();
 
 /*
 Модуль "Таби"
@@ -103,6 +103,7 @@ myForms.formFieldsInit({
 
 /* Модуль зіркового рейтингу */
 myForms.formRating();
+
 
 /* Модуль роботи з select. */
 // import './js/libs/select.js';

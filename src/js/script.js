@@ -2,6 +2,7 @@ import { isMobile } from './functions';
 
 import { myModules } from './modules';
 
+
 const CARDS_TO_SHOW = 3; // Кількість відображених карточок
 let displayedCards = 0; // Лічильник відображених карточок
 

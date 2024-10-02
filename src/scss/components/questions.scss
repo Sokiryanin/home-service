@@ -1,0 +1,107 @@
+.questions {
+
+    @include adaptiveValue("padding-top", 190, 40);
+    @include adaptiveValue("padding-bottom", 230, 40);
+    // .questions__container
+
+    &__container {
+        align-items: start;
+        display: grid;
+        grid-template-columns: auto 60%;
+        column-gap: toRem(20);
+        row-gap: toRem(30);
+
+        @media (max-width:$tablet) {
+            grid-template-columns: auto
+        }
+    }
+
+    // .questions__block-header
+
+    &__block-header {}
+
+    // .questions__spollers
+
+    &__spollers {}
+}
+
+.spollers-questions {
+    display: grid;
+    // gap: toRem(12);
+    // .spollers-questions__item
+
+    &__item {
+        border-radius: toRem(12);
+        transition: background-color 0.5s;
+        padding: toRem(24) toRem(32);
+
+        &[open] {
+            background-color: #f3f5f9;
+        }
+
+        @media (max-width:$mobileSmall) {
+            padding: toRem(16) toRem(24);
+        }
+
+    }
+
+    // .spollers-questions__title
+
+    &__title {
+        padding-right: toRem(30);
+        transition: all 0.5s;
+        font-weight: 700;
+        list-style: none;
+        font-family: inherit;
+        line-height: 1.2;
+
+        @include adaptiveValue("font-size", 24, 18);
+
+        ._spoller-init & {
+            position: relative;
+            cursor: pointer;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                background-color: #545971;
+                height: toRem(2);
+                width: toRem(15);
+                transition: transform 0.5s ease 0s;
+            }
+
+            &::before {
+                transform: translate(-75%, -50%) rotate(45deg);
+            }
+
+            &::after {
+                transform: translate(0, -50%) rotate(-45deg);
+            }
+
+            &._spoller-active {
+                &::before {
+                    transform: translateX(-75%) rotate(-45deg);
+                }
+
+                &::after {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        &::marker {
+            display: none;
+        }
+    }
+
+    // .spollers-questions__body
+
+    &__body {
+        padding-top: toRem(16);
+        font-size: toRem(16);
+        line-height: 1.5;
+    }
+}

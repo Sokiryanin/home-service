@@ -2,7 +2,7 @@
 
 .block-header {
     display: grid;
-    @include adaptiveValue("gap", 24, 15);
+// @include adaptiveValue("gap", 24, 15);
     // .block-header--center
 
     &--center {
@@ -29,6 +29,9 @@
             opacity: 0;
             transition: transform 0.5s, opacity 0.5s;
         @include adaptiveValue("font-size", 52, 24);
+        &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 24, 18);
+            }
 
         // .block-header__title--big
 
@@ -63,7 +66,18 @@
             font-weight: 400;
             font-size: toRem(18);
             line-height: 1.55;
-
+            }
+            
+            
+            a {
+                font-weight: 700;
+                text-decoration: underline;
+                color: $bgColorLight;
+                            @media (any-hover: hover) {
+                                    &:hover {
+                                        text-decoration: none;
+                                    }
+                                }
         }
     }
 }
