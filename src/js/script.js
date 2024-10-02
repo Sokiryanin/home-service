@@ -75,7 +75,7 @@ function renderCards(items, container) {
 // Ф-ція загрузки карток з бази cards.json
 async function fetchData() {
   const baseURL = window.location.origin.includes('github.io')
-    ? `${window.location.origin}/repository-name`
+    ? `${window.location.origin}/home-service`
     : window.location.origin;
 
   const dataPath = `${baseURL}/data/cards.json`;
