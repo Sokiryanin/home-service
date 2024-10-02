@@ -74,14 +74,8 @@ function renderCards(items, container) {
 
 // Ф-ція загрузки карток з бази cards.json
 async function fetchData() {
-  const baseURL = window.location.origin.includes('github.io')
-    ? `${window.location.origin}/home-service`
-    : window.location.origin;
-
-  const dataPath = `${baseURL}/data/cards.json`;
-
   try {
-    const response = await fetch(dataPath);
+    const response = await fetch('./cards.json');
     if (!response.ok) {
       throw new Error('Ошибка загрузки данных');
     }
