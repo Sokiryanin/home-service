@@ -13,5 +13,5 @@ import{S as P,N as $,P as C}from"./vendor-f275e1b7.js";(function(){const t=docum
           <div class="item-blog__tags">
               ${e}
           </div>
-      </article>`;t.innerHTML+=n})}async function K(){const t=`${window.location.origin.includes("github.io")?`${window.location.origin}/repository-name`:window.location.origin}/data/cards.json`;try{const s=await fetch(t);if(!s.ok)throw new Error("Ошибка загрузки данных");return(await s.json()).items}catch(s){return console.error("Error:",s),[]}}G();window.FLS=!0;R();B();W();U();Q();
-//# sourceMappingURL=main-dd5720dd.js.map
+      </article>`;t.innerHTML+=n})}async function K(){const t=`${window.location.origin.includes("github.io")?`${window.location.origin}/home-service`:window.location.origin}/data/cards.json`;try{const s=await fetch(t);if(!s.ok)throw new Error("Ошибка загрузки данных");return(await s.json()).items}catch(s){return console.error("Error:",s),[]}}G();window.FLS=!0;R();B();W();U();Q();
+//# sourceMappingURL=main-9454b786.js.map
