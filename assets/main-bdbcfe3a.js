@@ -13,5 +13,5 @@ import{S as P,N as $,P as C}from"./vendor-f275e1b7.js";(function(){const t=docum
           <div class="item-blog__tags">
               ${e}
           </div>
-      </article>`;t.innerHTML+=n})}async function K(){try{const o=await fetch("./cards.json");if(!o.ok)throw new Error("Ошибка загрузки данных");return(await o.json()).items}catch(o){return console.error("Error:",o),[]}}G();window.FLS=!0;H();B();W();F();Q();
-//# sourceMappingURL=main-04bfcb50.js.map
+      </article>`;t.innerHTML+=n})}async function K(){try{const o=await fetch("./data/cards.json");if(!o.ok)throw new Error("Ошибка загрузки данных");return(await o.json()).items}catch(o){return console.error("Error:",o),[]}}G();window.FLS=!0;H();B();W();F();Q();
+//# sourceMappingURL=main-bdbcfe3a.js.map
